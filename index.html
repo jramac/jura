@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juraj Matej Ćurdo</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .naslov{
+            width: 100vw;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: auto 700px auto;
+            z-index: 2;
+        }
+        .center-item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px 0 20px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px 0 20px;
+            cursor: pointer;
+        }
+        .mode{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            outline-width: 1px;
+            outline-color: black;
+            outline-style: dashed;
+            z-index: 1;
+        }
+        .photo{
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video{
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item{
+            padding: 3px;
+        }
+        .item:hover{
+            background-color: beige;
+            cursor:pointer;
+        }
+        .container{
+            height: 1000px;
+            width: 100vw;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="naslov">
+            <p class="menu">Language</p>
+            <h1 class="center-item">Juraj Matej Ćurdo</h1>
+            <p class="menu">Contact</p>
+        </div>
+        <div class="mode">
+            <div class="photo">
+                <p class="item">PHOTO</p>
+            </div>
+            <div class="video">
+                <p class="item">VIDEO/FILM</p>
+            </div>
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+</body>
+</html>
